@@ -42,7 +42,6 @@ async def chat_with_openai(history: list[dict], user_text: str) -> str:
             *history,
             {"role": "user", "content": user_text},
         ],
-        "temperature": 1,
     }
     async with httpx.AsyncClient(timeout=30) as client:
         r = await client.post(url, headers=headers, json=payload)
