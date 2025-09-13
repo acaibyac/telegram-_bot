@@ -9,7 +9,7 @@ app = FastAPI()
 
 # ENV
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
-OPENAI_MODEL   = os.environ.get("OPENAI_MODEL", "gpt-40")
+OPENAI_MODEL   = os.environ.get("OPENAI_MODEL", "gpt-5-mini")
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_SECRET = os.environ.get("TELEGRAM_SECRET")
 
